@@ -9,7 +9,10 @@ console.clear();
 */
 
 // --v-- write your code here --v--
-
+let bookTitle = 'Clean Code';
+let bookAuthor = 'uncle Bob'
+let bookRating = 9.7
+let bookNumberOfSales = 1200
 // --^-- write your code here --^--
 
 /*
@@ -25,6 +28,10 @@ Then log all variables to the console again.
 */
 
 // --v-- write your code here --v--
+console.table({bookTitle,bookAuthor,bookRating,bookNumberOfSales})
+bookNumberOfSales += 362
+console.table({bookTitle,bookAuthor,bookRating,bookNumberOfSales})
+
 
 // --^-- write your code here --^--
 
@@ -37,5 +44,11 @@ Then log all variables to the console again.
 */
 
 // --v-- write your code here --v--
+function logBookData(params) {
+  console.table({bookTitle,bookAuthor,bookRating,bookNumberOfSales})
+}
+bookNumberOfSales += 362;
+bookNumberOfSales += 47;
+logBookData();
 
 // --^-- write your code here --^--
